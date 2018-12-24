@@ -1,0 +1,358 @@
+*{
+    box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+    transition: all .2s ease-out;
+}
+html{
+    background-color: snow;
+}
+
+
+#title{
+    position: fixed;
+    z-index: 1000;
+    width: 100vw;
+    padding: 0.8vw;
+    color: snow;
+    background-color: steelblue;
+    box-shadow: .1vw .1vh 1vw rgba(0, 0, 0, 0.2);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+}
+h1{
+    font-size: 3.2vw;
+    display: inline-block;
+}
+.cap{
+    font-size: 4vw;
+}
+#cap1{color: salmon}
+#cap2{color: orange}
+#cap3{color: yellow}
+#cap4{color: greenyellow}
+#cap5{color: lightcyan}
+#cap6{color: skyblue}
+#cap7{color: plum}
+
+.menu{
+    position: fixed;
+    z-index: 500;
+    width: 20vw;
+    height: calc(100% - 6vw);
+    margin-top: 6vw;
+    display: flex;
+    flex-direction: column;
+    background-color: skyblue;
+    box-shadow: .1vw .1vh 1vw rgba(0, 0, 0, 0.2);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    font-size: 2vw;
+    font-family: STXihei, PMingLiU, SimHei;
+}
+#leftmenu2, #rightmenu2{
+    z-index: 200;
+}
+#leftmenu2{
+    z-index: 300;
+}
+#leftmenu, #leftmenu2 {
+    left: 0;
+}
+#rightmenu, #rightmenu2 {
+    right: 0;
+}
+.panel {
+    position: relative;
+    font-style: italic;
+}
+.tag {
+    margin-top: 1vh;
+    display: block;
+    text-align: left;
+}
+.input{
+    width: 80%;
+    margin-top: 1vh;
+    border: 0;
+    outline: 0;
+    text-align: center;
+    background-color: snow;
+    font-size: 2vw;
+}
+.input:focus{
+    background-color: white;
+}
+.pagebtn{
+    height: 3vw;
+    margin-top: 1vh;
+    line-height: 3vw;
+    float: right;
+    text-align: right;
+    background-color: powderblue;
+    user-select: none;
+    overflow: hidden;
+}
+#logoutbtn, #exitbtn{
+    float: left;
+    text-align: left;
+}
+.pagebtn:active, .button:active{
+    background-color: lightseagreen;
+}
+
+.button{
+    width: 100%;
+    height: 3vw;
+    margin-top: 1vh;
+    line-height: 3vw;
+    background-color: powderblue;
+    user-select: none;
+    overflow: hidden;
+}
+#avatar {
+    margin-top: 1vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 12vw;
+    height: 12vw;
+    background-color: lightgray;
+}
+#userlist {
+    margin-top: 1vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 16vw;
+    height: 25vw;
+    background-color: lightgray;
+}
+
+
+#catcher{
+    position: fixed;
+    right: 20vw;
+    left: 20vw;
+    width: 60vw;
+    height: calc(80vh - 6vw);
+    margin-top: 6vw;
+    flex-direction: column;
+    background-color: snow;
+    text-align: center;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+#catcher > div {
+    margin-top: 1vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    padding: .5vw;
+    word-break: break-all;
+}
+
+.note, .time{
+    display: inline-block;
+    background-color: lightgray;
+    border-radius: .5vw;
+    font-size: 2vw;
+    font-family: STXihei, PMingLiU, SimHei;
+}
+.time{
+    background-color: lightgray;
+}
+.postdiv{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    text-align: left;
+}
+.postiddiv{
+    margin-left: 1vh;
+    margin-right: 1vh;
+    display: inline-block;
+}
+.postcontentdiv{
+    display: inline-block;
+    padding: .5vw;
+    border-radius: .5vw;
+    background-color: lightgray;
+}
+.mypostdiv{
+    text-align: right !important;
+}
+.mypostdiv .postiddiv{
+    color: seagreen;
+}
+.mypostdiv .postcontentdiv{
+    background-color: lightblue;
+}
+#liberator{
+    position: fixed;
+    right: 20vw;
+    left: 20vw;
+    bottom: 0;
+    height: 20vh;
+    width: 60vw;
+    background-color: snow;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+#mesmenu{
+    width: 100%;
+    height: 25%;
+}
+#uppicbtn{
+    width: 5vh;
+    height: 5vh;
+    background: no-repeat center;
+    background-size: 80%;
+    background-clip:padding-box;
+    background-image: url("resources/online.png");
+}
+#msgarea{
+    display: inline-block;
+    resize: none;
+    font-size: 3vh;
+    width: calc(100% - 15vh);
+    height: 75%;
+    padding: 1vw;
+    border: 0px;
+    outline: 0;
+    background-color: snow;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+#msgarea:focus{
+    background-color: white;
+}
+#postbtn{
+    display: inline-block;
+    width: 15vh;
+    height: 75%;
+    border: 0px;
+    background: no-repeat center bisque;
+    background-size: 62.5%;
+    background-clip:padding-box;
+    background-image: url("resources/liberate.png");
+    outline: 0;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+#postbtn:active{
+    background-color: beige;
+}
+
+.left{
+    left: -20vw !important;
+}
+.right{
+    right: -20vw !important;
+}
+.top{
+    top: -100vh;
+}
+.noselect{
+    user-select : none;
+}
+/*Medium Screen*/
+/*
+@media screen and (min-width: 800px) and (max-width: 1199px){
+    .cap{
+        font-size: 6vw;
+    }
+    .word{
+        font-size: 5vw;
+    }
+    h1{
+        display: block;
+    }
+    .menu{
+        margin-top: 15vw;
+        height: calc(100% - 15vw);
+    }
+    #catcher{
+        height: calc(80vh - 15vw);
+        margin-top: 15vw;
+    }
+}
+*/
+/*Small Screen*/
+@media screen and (max-width: 799px){
+    .word{
+        display: none;;
+    }
+    .cap{
+        font-size: 18vw;
+    }
+    .menu{
+        width: 100vw;
+        height: calc(100% - 22vw);
+        margin-top: 22vw;
+        font-size: 4vh;
+    }
+    .panel{
+        width: 80%!important;
+    }
+    .input{
+        font-size: 3vh;
+    }
+    .button{
+        height: 5vh;
+        line-height: 5vh;
+    }
+    .pagebtn{
+        height: 6vh;
+        line-height: 6vh;
+    }
+    #avatar {
+        width: 25vh;
+        height: 25vh;
+    }
+    #userlist {
+        width: 80%;
+        height: 40vh;
+    }
+    .left{
+        left: -100vw !important;
+    }
+    .right{
+        right: -100vw !important;
+    }
+    .note, .time{
+        border-radius: .8vh;
+        font-size: 3vh;
+    }
+    #catcher{
+        top: 0;
+        margin-top: 22vw;
+        right: 0;
+        left: 0;
+        width: 100vw;
+        height: calc(75vh - 22vw);
+    }
+    #liberator{
+        bottom: : 0;
+        right: 0;
+        left: 0;
+        width: 100vw;
+        height: 25vh
+    }
+    #mesmenu{
+        height: 30%;
+    }
+    #uppicbtn{
+        height: 7.5vh;
+        width: 7.5vh;
+    }
+    #msgarea{
+        display: inline-block;
+        width: calc(100% - 17.5vh);
+    }
+    #postbtn{
+        width: 17.5vh;
+    }
+}

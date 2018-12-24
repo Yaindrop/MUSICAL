@@ -1,0 +1,9 @@
+{
+    "name": "MUSICAL",
+    "version": "0.0.1",
+    "description": "Multi-Universal Synchronized Information Catcher And Liberator.",
+    "dependencies": {
+        "express": "^4.15.3",
+        "socket.io": "^2.0.3"
+    }
+}

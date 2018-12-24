@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- common head -->
+        <meta charset="utf-8">
+        <meta http-equiv="content-type" content="text/html">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="Shortcut Icon" href="resources/liberate.png">
+
+        <title>MUSICAL</title>
+        <link href="stylesheet.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="client.js"></script>
+        <script type="text/javascript" src="socket.io.js"></script>
+        <script type="text/javascript" src="CryptoJS/rollups/md5.js"></script>
+        <script type="text/javascript" src="CryptoJS/rollups/sha256.js"></script>
+        <script type="text/javascript" src="CryptoJS/components/enc-base64-min.js"></script>
+        <script type="text/javascript" src="CryptoJS/rollups/aes.js"></script>
+        <script type="text/javascript" src="CryptoJS/components/core-min.js"></script>
+    </head>
+    <body>
+        <div id="title">
+            <h1>
+                <span class="cap" id="cap1">M</span><span class="word">ulti-</span>
+                <span class="cap" id="cap2">U</span><span class="word">niversal</span>
+                <span class="cap" id="cap3">S</span><span class="word">ynchronized</span>
+                <span class="cap" id="cap4">I</span><span class="word">nformation</span>
+                <span class="cap" id="cap5">C</span><span class="word">atcher</span>
+                <span class="cap" id="cap6">A</span><span class="word">nd</span>
+                <span class="cap" id="cap7">L</span><span class="word">iberator</span>
+            </h1>
+        </div>
+        <div class = "menu" id="leftmenu">
+            <div class="panel">
+                <div class="tag">MUSICAL ID: </div>
+                <input class = "input" id="idinput" type="text" maxlength="12"/>
+                <div class="tag">Password: </div>
+                <input class = "input" id="passinput" type="password" maxlength="12"/>
+                <div class = "pagebtn" id="loginbtn">&nbsp;Continue=>&nbsp;</div>
+            </div>
+        </div>
+        <div class = "menu" id="rightmenu">
+            <div class="panel">
+                <div class="tag">Universe ID: </div>
+                <input class = "input" id="uniinput" type="text" maxlength="12"/ disabled="true">
+                <div class="tag">Universe Key: </div>
+                <input class = "input" id="unikeyinput" type="password" maxlength="12" disabled="true"/>
+                <div class = "pagebtn" id="unibtn">&nbsp;Continue=>&nbsp;</div>
+            </div>
+        </div>
+        <div class = "menu left" id="leftmenu2">
+            <div class="panel">
+                <div class="tag">Logged-in ID: </div>
+                <input class = "input" id="loggedid" type="text" maxlength="12" disabled="true"/>
+                <div id="avatar">UNDER CONSTRUCTION</div>
+                <div class = "button" id="cgavtbtn">Change Avatar</div>
+                <input class = "input" id="cgpassinput" type="password" maxlength="12" disabled="true"/>
+                <div class = "button" id="cgpassbtn">Change Password</div>
+                <div class="tag">Wormhole Key: </div>
+                <input class = "input" id="whkeyinput" type="text" maxlength="12" disabled="true" value="UNDER CONSTRUCTION"/>
+                <div class = "button" id="enterwhbtn">Enter Wormhole!</div>
+                <div class = "button" id="createwhbtn">Create Wormhole!</div>
+                <div class = "pagebtn" id="logoutbtn">&nbsp;<=logout&nbsp;</div>
+            </div>
+        </div>
+        <div class = "menu right" id="rightmenu2">
+            <div class="panel">
+                <!--<div class = "pagebtn" id="exitbtn">&nbsp;<=Exit&nbsp;</div>-->
+                <div class="tag">Current Universe: </div>
+                <input class = "input" id="currentuni" type="text" maxlength="12"/ disabled="true">
+                <div class="tag">Universe Key: </div>
+                <input class = "input" id="cgkeyinput" type="password" maxlength="12"/ disabled="true">
+                <div class = "button" id="cgkeybtn">Change Key</div>
+                <div class="tag">Online Users: </div>
+                <div id = "userlist">UNDER CONSTRUCTION</div>
+                <div class = "pagebtn" id="exitbtn">&nbsp;<=Exit&nbsp;</div>
+            </div>
+        </div>
+        <div id="catcher">
+        <!--
+            <div class="note">text</div>
+            <div class="msgdiv">
+                <div class="username">name</div>
+                <div class="message">text</div>
+            </div>
+            <div class="msgdiv mymsgdiv">
+                <div class="username">me</div>
+                <div class="message">text</div>
+            </div>
+        -->
+        </div>
+        <div id="liberator">
+            <div id="mesmenu">
+                <div id="uppicbtn"></div>
+                <input id="uppicinput" type="file" accept="image/*" style="display:none"/>
+            </div>
+            <textarea id="msgarea"></textarea><button id="postbtn"/>
+        </div>
+    </body>
+</html>
